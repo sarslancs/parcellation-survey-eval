@@ -18,6 +18,14 @@ function [ dice, joined ] = dice_atlas_align( parcels, atlas )
 %   dice: Average Dice score computed between parcels and atlas
 %   joined: Input parcels with new labels after matching and joining 
 %   
+%   USAGE
+%   =====
+%   [ DICE, JOINED] = dice_atlas_align( PARCELS, ATLAS) returns the DICE
+%   score that measures the similarity between the target and reference
+%   parcellations (PARCELS and ATLAS, respectively). PARCELS can be a 
+%   subject-level or groupwise parcellation. ATLAS can be the Brodmann 
+%   areas or any other reference parcellation.
+%
 %   REFERENCE
 %   =========
 %   This code is part of the evaluation pipelines described in the brain
@@ -30,15 +38,9 @@ function [ dice, joined ] = dice_atlas_align( parcels, atlas )
 %
 %   Author: Salim Arslan, April 2017 (name.surname@imperial.ac.uk)
 %
-%   USAGE
-%   [ DICE, JOINED] = dice_atlas_align( PARCELS, ATLAS) returns the DICE
-%   score that measures the similarity between the target and reference
-%   parcellations (PARCELS and ATLAS, respectively). PARCELS can be a 
-%   subject-level or groupwise parcellation. ATLAS can be the Brodmann 
-%   areas or any other reference parcellation, such as the coarse-level 
-%   myelin parcellation provided in the "atlas" folder.
 %   
 %   TUTORIAL
+%   %   =====
 %   For example, to load the group avereage reference atlases for the left 
 %   hemisphere, run: 
 %   
@@ -50,8 +52,18 @@ function [ dice, joined ] = dice_atlas_align( parcels, atlas )
 %   parcellation, in which only areas with high myelination are retained
 %   (this is the reference parcellation used for measuring alignment to 
 %   structured patterns of myelination). BA is a parcellation with labels
-%   of several Brodmann areas (as shwon in Fig. 3a). See the reference 
-%   manual/paper for more information.
+%   of several Brodmann areas (as shown in Fig. 3a). The corresponding
+%   labels in Fig. 3a are mapped to BA as follows:
+%
+%   BA[3,1,2]   -> 1
+%   BA4         -> 2
+%   BA6         -> 3
+%   BA44        -> 4
+%   BA45        -> 5
+%   BA17        -> 6
+%   MT          -> 7
+%   BA[35,36]   -> 8
+%
 
 parcelsIN = parcels;
 parcels(atlas == 0) = 0;
