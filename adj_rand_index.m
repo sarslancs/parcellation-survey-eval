@@ -33,9 +33,9 @@ function [ ari ] = adj_rand_index(U,V)
 %   For the parcellation data and reference manual visit the survey page: 
 %   https://biomedia.doc.ic.ac.uk/brain-parcellation-survey/ 
 %
-%   Author: Tijl De Bie, February 2003
-%
 %   Modified by Salim Arslan, April 2017 (name.surname@imperial.ac.uk)
+%
+%   Author: Tijl De Bie, February 2003 
 
 
 n=length(U);
