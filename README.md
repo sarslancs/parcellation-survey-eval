@@ -24,13 +24,11 @@ Simply follow in-file instructions. Reading the _Data_ and _Experimental Setup_ 
 help understand the code better.
 
 ## Data
-Generation and evaluation of parcellations are carried out using the publicly available dataset from the Human Connectome 
+Generation and evaluation of parcellations are carried out using the publicly available datasets from the Human Connectome 
 Project (HCP). Some functions may be dependednt on the HCP data structures and require you to download certain files. 
 However, each script can also be adapted to any other dataset, by following the steps throughout the codes. If you would like 
 to use the HCP data, it can be downloaded from https://db.humanconnectome.org 
 
-## Parcellations
-To follow the experimental pipeline described in the paper, all parcellations are made publicly available at
-https://biomedia.doc.ic.ac.uk/brain-parcellation-survey/ Please see the data reference manual for a quick walkthrough.
+
 
 
