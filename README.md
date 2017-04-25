@@ -29,6 +29,7 @@ Project (HCP). Some functions may be dependent on the HCP data structures and re
 However, each script can also be adapted to any other dataset, by following the steps throughout the codes. If you would like 
 to use the HCP data, it can be downloaded from https://db.humanconnectome.org 
 
-
+## Contact
+Forward any questions to name.surname@imperial.ac.uk
 
 
