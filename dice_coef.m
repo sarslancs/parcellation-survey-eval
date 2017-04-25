@@ -20,7 +20,7 @@ function [ dice, Umatched, Vmatched ] = dice_coef( U, V )
 %   Umatched: Parcellation U, with new labels after being matched to V
 %   Vmatched: Parcellation V, with new labels after being matched to U
 %   
-%   USAGE
+%   USAGE 
 %   =====
 %   DICE = DICE_COEF( U, V ) returns a DICE value, which indicates the 
 %   similarity between parcellations U and V. U and V can be (1) 
