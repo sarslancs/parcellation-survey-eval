@@ -20,8 +20,8 @@ Data reference manual V2: https://biomedia.doc.ic.ac.uk/wp-content/uploads/sites
 
 ## Usage
 
-Simply follow in-file instructions. Reading the Data and Experimental Setup sections in the paper may also 
-help understand the code.
+Simply follow in-file instructions. Reading the _Data_ and _Experimental Setup_ sections in the article may also 
+help understand the code better.
 
 ## Data
 Generation and evaluation of parcellations are carried out using the publicly available dataset from the Human Connectome 
