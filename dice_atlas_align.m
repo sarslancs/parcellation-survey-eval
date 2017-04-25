@@ -40,7 +40,7 @@ function [ dice, joined ] = dice_atlas_align( parcels, atlas )
 %
 %   
 %   TUTORIAL
-%   %   =====
+%   ========
 %   For example, to load the group avereage reference atlases for the left 
 %   hemisphere, run: 
 %   
