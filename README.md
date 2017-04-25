@@ -8,7 +8,7 @@ Please cite the corresponding paper (if using the code) as:
 Arslan, S., Ktena, S.I., Makropoulos, A., Robinson, E.C., Rueckert, D., Parisot, S., "Human brain mapping: A systematic 
 comparison of parcellation methods for the human cerebral cortex", NeuroImage (2017), http://dx.doi.org/10.1016/j.neuroimage.2017.04.014
 
-## Some useful links you may want to see _a priori_ 
+## Some useful links you may want to see before using the code 
 
 Survey page: https://biomedia.doc.ic.ac.uk/brain-parcellation-survey/
 
