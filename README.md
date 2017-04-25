@@ -25,7 +25,7 @@ help understand the code better.
 
 ## Data
 Generation and evaluation of parcellations are carried out using the publicly available datasets from the Human Connectome 
-Project (HCP). Some functions may be dependednt on the HCP data structures and require you to download certain files. 
+Project (HCP). Some functions may be dependent on the HCP data structures and require you to download certain files. 
 However, each script can also be adapted to any other dataset, by following the steps throughout the codes. If you would like 
 to use the HCP data, it can be downloaded from https://db.humanconnectome.org 
 
