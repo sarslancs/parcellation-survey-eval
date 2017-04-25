@@ -32,4 +32,6 @@ to use the HCP data, it can be downloaded from https://db.humanconnectome.org
 ## Contact
 Forward any questions to name.surname@imperial.ac.uk
 
+To stay up-to-date with the survey follow @salimarslan on Twitter
+
 
