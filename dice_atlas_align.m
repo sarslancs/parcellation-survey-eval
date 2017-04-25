@@ -44,7 +44,7 @@ function [ dice, joined ] = dice_atlas_align( parcels, atlas )
 %   For example, to load the group avereage reference atlases for the left 
 %   hemisphere, run: 
 %   
-%   load('atlas/atlas_group_avr_L') 
+%   load('atlas/atlas_group_avr_L')  
 %   
 %   This will return three parcellations, namely MYELIN, MYELIN_THR and BA. 
 %   MYELIN is the original coarse-resolution myelin parcellation described  
