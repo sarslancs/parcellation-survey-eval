@@ -16,7 +16,7 @@ Download parcellations from: https://imperialcollegelondon.box.com/s/g5q0kyvpqdh
 
 Preprint of manuscript: https://www.doc.ic.ac.uk/~sa1013/pub/2017-neuroimage-brain-parcellation-survey.pdf
 
-Data reference manual: https://biomedia.doc.ic.ac.uk/wp-content/uploads/sites/95/2017/03/Reference-Manual.pdf 
+Data reference manual: https://biomedia.doc.ic.ac.uk/wp-content/uploads/sites/95/2017/04/Reference-Manual.pdf
 
 ## Usage
 
