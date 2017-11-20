@@ -144,7 +144,7 @@ for i = 1 : C
     end      
 end
 
-[sorted, idx] = sort(dices, 'Descend');
+[sorted, idx] = sort(dices, 'descend');
 dices = sorted;
 temp = pairs(:,1);
 pairs(:,1) = temp(idx);

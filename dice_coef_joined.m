@@ -158,7 +158,7 @@ pairs(ids,:) = [];
 dices(ids, :) = [];
 
 % Align matched clusters
-[sorted, idx] = sort(dices, 'Descend');
+[sorted, idx] = sort(dices, 'descend');
 dices = sorted;
 temp = pairs(:,1);
 pairs(:,1) = temp(idx);
