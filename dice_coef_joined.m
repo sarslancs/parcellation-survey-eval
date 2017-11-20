@@ -59,7 +59,7 @@ dices = zeros(max(K1,K2),1);
 % JOIN: First pass
 for i = 1 : K1;
     v = parcels2(parcels1 == i);
-    [ instances, values ] = countUniqueElements(v);
+    [ instances, values ] = count_unique_elements(v);
     sums = arrayfun(@(x) sum(parcels2 == x), instances);
     res = (values./sums) >= .5;
     
@@ -76,7 +76,7 @@ end
 clusters2 = unique(parcels2);
 for i = 1 : length(clusters2);
     v = parcels1(parcels2 == clusters2(i));
-    [ instances, values ] = countUniqueElements(v);
+    [ instances, values ] = count_unique_elements(v);
     sums = arrayfun(@(x) sum(parcels1 == x), instances);
     res = (values./sums) >= .5;
     
@@ -95,12 +95,12 @@ clusters1 = unique(parcels1);
 for i = 1 : length(clusters1)
     id1 = clusters1(i);
     v = parcels2(parcels1 == id1);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind1] = max(counts);  
         
     id2 = uniqs(ind1);
     v = parcels1(parcels2 == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [~, ind2] = max(counts);
     cmp = uniqs(ind2);
     if cmp == id1    
@@ -119,7 +119,7 @@ unassigned_ids = setdiff(unique(parcels2), find(check2 == 1));
 for i = 1 : length(unassigned_ids)
     id2 = unassigned_ids(i);
     v = parcels1(parcels2 == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind2] = max(counts);
     id1 = uniqs(ind2);
     if check1(id1) == 0  
@@ -138,7 +138,7 @@ unassigned_ids = setdiff(unique(parcels1), find(check1 == 1));
 for i = 1 : length(unassigned_ids)
     id1 = unassigned_ids(i);
     v = parcels2(parcels1 == id1);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind1] = max(counts);
     id2 = uniqs(ind1);
     if check2(id2) == 0  

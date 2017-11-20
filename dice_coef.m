@@ -60,12 +60,12 @@ dices = zeros(max(K1,K2),1);
 for i = 1 : K1
     id1 = i;
     v = parcels2(parcels1 == id1);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind1] = max(counts);  
         
     id2 = uniqs(ind1);
     v = parcels1(parcels2 == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [~, ind2] = max(counts);
     cmp = uniqs(ind2);
     
@@ -86,7 +86,7 @@ C = length(unassigned_ids);
 for i = 1 : C
     id2 = unassigned_ids(i);
     v = parcels1(parcels2 == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind2] = max(counts);
     id1 = uniqs(ind2);
     
@@ -107,7 +107,7 @@ C = length(unassigned_ids);
 for i = 1 : C
     id1 = unassigned_ids(i);
     v = parcels2(parcels1 == id1);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind1] = max(counts);
     id2 = uniqs(ind1);
     
@@ -129,7 +129,7 @@ C = length(unassigned_ids);
 for i = 1 : C
     id2 = unassigned_ids(i);
     v = parcels1(parcels2 == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     [overlap, ind2] = max(counts);
     id1 = uniqs(ind2);
     

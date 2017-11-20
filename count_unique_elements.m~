@@ -1,0 +1,24 @@
+function [ uniqs, counts ] = count_unique_elements( V )
+%COUNT_UNIQUE_ELEMENTS Counts the number of unique elements in the array
+%   Given an array of v counts the number of unique elements. 
+%   
+%   INPUT
+%   =====
+%   V: A Nx1 column vector, where N is the number of elements. 
+%
+%   OUTPUT
+%   ======
+%   uniqs: M x 1 vector, where M is the number of unique elements in 
+%          the input vector. 
+%   counts: M x 1 vector, in which counts_i corresponds to the number of  Otherwise the following error may be encountered.
+%   'Error using vertcat
+%   Dimensions of matrices being concatenated are not consistent.'
+
+    y = sort(V);
+    p = find([true;diff(y)~=0;true]);
+    uniqs = y(p(1:end-1));
+    counts = diff(p);
+    [counts, idx] = sort(counts, 'descend');
+    uniqs = uniqs(idx);   
+end
+

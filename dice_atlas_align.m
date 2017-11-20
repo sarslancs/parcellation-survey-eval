@@ -107,7 +107,7 @@ dices = zeros(K2,1);
 % Join them all
 for i = 1 : length(clusters2);
     v = parcels(atlas == i);
-    [ instances, values ] = countUniqueElements(v);
+    [ instances, values ] = count_unique_elements(v);
     sums = arrayfun(@(x) sum(parcels == x), instances);
     res = (values./sums) >= .5;    
     if sum(res) > 1
@@ -127,14 +127,14 @@ K2 = length(clusters2);
 for i = 1 : K2
     id1 = clusters2(i);
     v = parcels(atlas == id1);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     sums = arrayfun(@(x) sum(parcels == x), uniqs);
     [~, ind1] = max(counts./sums); 
         
     id2 = uniqs(ind1);
     if id2 > 0
         v = atlas(parcels == id2);
-        [uniqs, counts] = countUniqueElements(v);
+        [uniqs, counts] = count_unique_elements(v);
         sums = arrayfun(@(x) sum(atlas == x), uniqs);
         [~, ind2] = max(counts./sums);
         cmp = uniqs(ind2);
@@ -155,7 +155,7 @@ K1 = length(unassigned_ids);
 for i = 1 : K1
     id2 = unassigned_ids(i);
     v = parcels(atlas == id2);
-    [uniqs, counts] = countUniqueElements(v);
+    [uniqs, counts] = count_unique_elements(v);
     sums = arrayfun(@(x) sum(parcels == x), uniqs);
     [~, ind2] = max(counts./sums); 
     id1 = uniqs(ind2);
